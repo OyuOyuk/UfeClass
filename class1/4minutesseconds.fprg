@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="4minutesseconds"/>
+        <attribute name="authors" value="Nomin-Erdene"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-04 10:03:06 AM"/>
+        <attribute name="created" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzA5OjU5OjIwIEFNOzM0NTI="/>
+        <attribute name="edited" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzEwOjAzOjA2IEFNOzE7MzU0NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="givenTime, minutes, seconds" type="Integer" array="False" size=""/>
+            <input variable="givenTime"/>
+            <assign variable="seconds" expression="givenTime % 60"/>
+            <assign variable="minutes" expression="givenTime / 60"/>
+            <output expression="&quot;Minutes :&quot; &amp; minutes" newline="True"/>
+            <output expression="&quot;Seconds :&quot; &amp;seconds" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

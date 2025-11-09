@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2_getthelastnumber"/>
+        <attribute name="authors" value="Nomin-Erdene"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-04 09:52:26 AM"/>
+        <attribute name="created" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzA5OjQ4OjAwIEFNOzM0NDg="/>
+        <attribute name="edited" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzA5OjUyOjI2IEFNOzE7MzU1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="givenNumber" type="Integer" array="False" size=""/>
+            <input variable="givenNumber"/>
+            <output expression="givenNumber % 10" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

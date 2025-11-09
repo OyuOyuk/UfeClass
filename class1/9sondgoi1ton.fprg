@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="9sondgoi1ton"/>
+        <attribute name="authors" value="Nomin-Erdene"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-04 10:32:51 AM"/>
+        <attribute name="created" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzEwOjMxOjMzIEFNOzM0Mzg="/>
+        <attribute name="edited" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzEwOjMxOjM2IEFNOzE7Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzEwOjIxOjIzIEFNOzgxdG9uLmZwcmc7ODAyMg=="/>
+        <attribute name="edited" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzEwOjMyOjUxIEFNOzE7MzU0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <if expression="i % 2 == 0">
+                    <then/>
+                    <else>
+                        <output expression="i" newline="True"/>
+                    </else>
+                </if>
+            </for>
+            <assign variable="i" expression="1"/>
+        </body>
+    </function>
+</flowgorithm>

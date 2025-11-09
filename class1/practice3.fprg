@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="practice3"/>
+        <attribute name="authors" value="Nomin-Erdene"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-11 09:55:08 AM"/>
+        <attribute name="created" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTExOzA5OjQ2OjM0IEFNOzM0NTE="/>
+        <attribute name="edited" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTExOzA5OjU1OjA4IEFNOzI7MzU2MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, i" type="Integer" array="False" size=""/>
+            <declare name="out" type="Boolean" array="False" size=""/>
+            <assign variable="out" expression="true"/>
+            <input variable="num"/>
+            <for variable="i" start="2" end="num" direction="inc" step="1">
+                <if expression="num % i == 0 and num != i">
+                    <then>
+                        <assign variable="out" expression="false"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="out" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

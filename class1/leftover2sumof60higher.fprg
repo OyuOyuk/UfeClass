@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="leftover2sumof60higher"/>
+        <attribute name="authors" value="Nomin-Erdene"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-04 01:00:43 PM"/>
+        <attribute name="created" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzEwOjQyOjI1IEFNOzM0NDE="/>
+        <attribute name="edited" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzEwOjQyOjI3IEFNOzE7Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzEwOjEzOjA1IEFNOzdkaXZpZGFibGUuZnByZzs4NTcw"/>
+        <attribute name="edited" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzAxOjAwOjQzIFBNOzI7MzU1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="3" direction="inc" step="1">
+                <input variable="a"/>
+                <if expression="a &gt; 60">
+                    <then>
+                        <assign variable="sum" expression="sum + a"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

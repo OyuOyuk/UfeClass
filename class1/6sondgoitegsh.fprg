@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="6sondgoitegsh"/>
+        <attribute name="authors" value="Nomin-Erdene"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-04 10:11:58 AM"/>
+        <attribute name="created" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzEwOjEwOjQxIEFNOzM0MzQ="/>
+        <attribute name="edited" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzEwOjExOjU4IEFNOzE7MzU1MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="givenNumber" type="Integer" array="False" size=""/>
+            <input variable="givenNumber"/>
+            <if expression="givenNumber % 2 == 0">
+                <then>
+                    <output expression="&quot;tegsh&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;sondgoi&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

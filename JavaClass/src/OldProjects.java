@@ -136,7 +136,7 @@ public class OldProjects {
 
             }
         }
-        System.out.println(sum);
+        System.out.println("sum :" +sum);
     }
     public static void DiagonalChoice(){
         int[][] arr = new int[5][5];

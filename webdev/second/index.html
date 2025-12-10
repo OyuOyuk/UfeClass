@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: rgb(140, 127, 102);
+            width: 100%;
+            padding: 1%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .navi {
+            background-color: beige;
+            border: none;
+            height: 5vh;
+            width: 40vh;
+        }
+
+        .body {
+            display: flex;
+            flex: 1; 
+            overflow: hidden; 
+        }
+
+        .left {
+            background-color: rgb(198, 194, 179);
+            width: 25%;
+            height: 100%; 
+            box-sizing: border-box;
+            
+            text-align: justify;
+            
+        }
+
+        .right {
+            display: flex;
+
+            flex-direction: column;
+            flex: 1;
+            background-color: #eee;
+            box-sizing: border-box;
+        }
+        iframe{
+            height: 80%;
+        }
+        #profileimg{
+            width:60%;
+            margin-top: 5vh;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        #address{
+            padding: 5vh;
+            text-align: justify;
+        }
+    </style>
+    <script>
+        function changeIframe(name){
+            let i = document.getElementById("frame");
+            i.src = name + ".html"
+
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <button class="navi" onclick="changeIframe('Home')">Home page</button>
+        <button class="navi" onclick="changeIframe('Gallery')">Gallery</button>
+        <button class="navi" onclick="changeIframe('Videos')">Videos</button>
+        <button class="navi" onclick="changeIframe('Map')">Map</button>
+    </div>
+    <div class="body">
+        <div class="left">
+            <img src="img/WIN_20251112_12_29_04_Pro.jpg" alt="" id="profileimg">
+            <div style="padding: 5%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea odio autem ex ipsa deleniti facilis at, amet nemo itaque non veniam nihil esse! Maxime non veritatis quae eaque ea incidunt?</div>
+        </div>
+        <div class="right">
+            <iframe src="Gallery.html" frameborder="0" id="frame">
+
+            </iframe>
+            <div class="address">
+                <p style="margin: 5vh;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo totam amet debitis, nemo itaque enim molestiae velit cupiditate suscipit deserunt exercitationem pariatur? Doloribus corporis necessitatibus natus aspernatur quisquam impedit. Accusamus!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

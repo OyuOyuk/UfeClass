@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="practice1"/>
+        <attribute name="authors" value="Nomin-Erdene"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-11 09:46:15 AM"/>
+        <attribute name="created" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTExOzA5OjMzOjU1IEFNOzM0NTA="/>
+        <attribute name="edited" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTExOzA5OjQ2OjE1IEFNOzI7MzU1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="input1, input2, bignum, i, biggestdivider" type="Integer" array="False" size=""/>
+            <assign variable="biggestdivider" expression="1"/>
+            <input variable="input1"/>
+            <input variable="input2"/>
+            <if expression="input1 &gt; input2">
+                <then>
+                    <assign variable="bignum" expression="input2"/>
+                </then>
+                <else>
+                    <assign variable="bignum" expression="input1"/>
+                </else>
+            </if>
+            <for variable="i" start="1" end="bignum" direction="inc" step="1">
+                <if expression="input1 % i == 0 and input2%i == 0">
+                    <then>
+                        <if expression="i &gt; biggestdivider">
+                            <then>
+                                <assign variable="biggestdivider" expression="i"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="biggestdivider" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

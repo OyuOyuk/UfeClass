@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="3"/>
+        <attribute name="authors" value="Nomin-Erdene"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-04 09:59:19 AM"/>
+        <attribute name="created" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzA5OjUyOjQ2IEFNOzM0NTM="/>
+        <attribute name="edited" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzA5OjU5OjE5IEFNOzE7MzU2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="givenNumber" type="Integer" array="False" size=""/>
+            <declare name="save" type="Integer" array="False" size=""/>
+            <input variable="givenNumber"/>
+            <assign variable="save" expression="givenNumber / 10"/>
+            <output expression="save * (givenNumber %10)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

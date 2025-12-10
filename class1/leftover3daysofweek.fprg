@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="leftover3daysofweek"/>
+        <attribute name="authors" value="Nomin-Erdene"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-04 10:48:42 AM"/>
+        <attribute name="created" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzEwOjQ0OjQzIEFNOzM0NDM="/>
+        <attribute name="edited" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzEwOjQ4OjQyIEFNOzE7MzU1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dayInNumber" type="Integer" array="False" size=""/>
+            <declare name="days" type="String" array="True" size="7"/>
+            <assign variable="days[0]" expression="&quot;Monday&quot;"/>
+            <assign variable="days[1]" expression="&quot;Tuesday&quot;"/>
+            <assign variable="days[2]" expression="&quot;Wednesday&quot;"/>
+            <assign variable="days[3]" expression="&quot;Thursday&quot;"/>
+            <assign variable="days[4]" expression="&quot;Friday&quot;"/>
+            <assign variable="days[5]" expression="&quot;Saturday&quot;"/>
+            <assign variable="days[6]" expression="&quot;Sunday&quot;"/>
+            <input variable="dayInNumber"/>
+            <if expression="dayInNumber &gt;= 0 &amp;&amp; dayInNumber &lt; 7">
+                <then>
+                    <output expression="days[dayInNumber-1]" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

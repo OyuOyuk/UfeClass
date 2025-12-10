@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="5smallerlarger"/>
+        <attribute name="authors" value="Nomin-Erdene"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-04 10:09:20 AM"/>
+        <attribute name="created" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzEwOjAzOjA4IEFNOzM0Mzk="/>
+        <attribute name="edited" value="Tm9taW4tRXJkZW5lO0RFU0tUT1AtNE8yTE0zNzsyMDI1LTA5LTA0OzEwOjA5OjIwIEFNOzE7MzU0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, smaller" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <if expression="x &gt;= y">
+                <then>
+                    <if expression="x = y">
+                        <then>
+                            <assign variable="smaller" expression="y"/>
+                            <output expression="&quot;both are the same&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="smaller" expression="y"/>
+                            <output expression="&quot;second too smaller&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="smaller" expression="x"/>
+                    <output expression="&quot;ehnii too smaller&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="smaller" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+        .body{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .login{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            padding: 1vw;
+        }
+        .input{
+            margin: 1%;
+            height: 4vh;
+            border: blue solid 2px;
+            border-radius: 8px;
+            background-color: rgb(238, 238, 238);
+        }
+        #login{
+            margin: 1%;
+            width: 40%;
+            height: 4vh;
+            border: blue solid 2px;
+            border-radius: 8px;
+            background-color: rgb(238, 238, 238);
+        }
+        .button{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .table{
+            width: auto;
+        }
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, tr, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 10vw;
+           
+            
+        }
+    </style>
+</head> 
+<body>
+    <script>
+        let used = [];
+
+        function getNextID() {
+            let id = 1;
+            while (used.includes(id)) id++;
+            used.push(id);
+            return id;
+        }
+
+        function login() {
+            let LastName = document.getElementById("LastName").value;
+            let FirstName = document.getElementById("FirstName").value;
+            let age = document.getElementById("Age").value;
+            if(LastName != "" || FirstName != "" || age != ""){
+              let table = document.getElementById("table");
+
+                let row = document.createElement("tr");
+
+                let id = getNextID();
+
+                let cell1 = document.createElement("td");
+                cell1.textContent = id;
+                row.appendChild(cell1);
+
+                let cell2 = document.createElement("td");
+                cell2.textContent = LastName;
+                row.appendChild(cell2);
+
+                let cell3 = document.createElement("td");
+                cell3.textContent = FirstName;
+                row.appendChild(cell3);
+
+                let cell4 = document.createElement("td");
+                cell4.textContent = age;
+                row.appendChild(cell4);
+
+                let cell5 = document.createElement("td");
+                let btn = document.createElement("button");
+                btn.textContent = "X";
+                btn.style = "background-color: rgb(255, 222, 222); border: none; color:rgb(255, 100, 100);";
+                btn.onclick = function () {
+                    removeRow(id);
+                };
+
+                cell5.appendChild(btn);
+                row.appendChild(cell5);
+
+                table.appendChild(row);
+
+                document.getElementById("LastName").value = "";
+                document.getElementById("FirstName").value = "";
+                document.getElementById("Age").value = "";  
+            }
+            
+        }
+
+        function removeRow(id) {
+            let table = document.getElementById("table");
+
+            for (let i = 1; i < table.rows.length; i++) {
+                if (parseInt(table.rows[i].cells[0].textContent) === id) {
+                    table.deleteRow(i);
+                    break;
+                }
+            }
+
+            used = used.filter(x => x !== id);
+        }
+
+    </script>
+
+    <h3>Хэрэглэгчийн бүртгэл</h3>
+    <div class = "body">
+        <div class="login">
+            <input type="text" class = "input" id = "LastName" placeholder="Овог">
+            <input type="text" class = "input" id = "FirstName" placeholder="Нэр">
+            <input type="text" class = "input" id = "Age" placeholder="Нас">
+            <div class="button">
+                <button id="login" onclick="login()">Бүртгэх</button>
+            </div>
+        </div>
+        <div class="table">
+            <table id="table">
+                <tr>
+                    <th>№</th>
+                    <th>Овог</th>
+                    <th>Нэр</th>
+                    <th>Нас</th>
+                    <th>Үйлдэл</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>

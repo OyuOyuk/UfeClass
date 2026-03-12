@@ -1,0 +1,64 @@
+.Header{
+    width: 100%;
+    background-color: rgb(98, 125, 109);
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.HeaderContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5vh;
+    justify-content: space-between;
+    width: 20vw;
+}
+.HeaderTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    color:rgb(251, 253, 255);
+    letter-spacing: 2px;
+}
+.NavContainer{
+    display: flex;
+    flex-direction: row;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    justify-content: space-around;
+    width: 100%;
+}
+.NavLink{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.NavIcon{
+    height: 100%;
+    width: auto;
+}
+.circleCounter {
+    border-radius: 50%;
+    background-color: rgb(250, 114, 141);
+    color: white;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 16px;
+}
+.NavLinkIcon{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+}

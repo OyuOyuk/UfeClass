@@ -1,0 +1,58 @@
+
+.LoginVerticalAlign{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginIsland{
+    height: 50%;
+    width: 30%;
+    background-color: rgb(208, 233, 206);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+.LoginTitle{
+    font-size: xx-large;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.LoginLabel{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+}
+.LoginUserName{
+    height: 4vh;
+    border-radius: 12px;
+    padding-left: 0.5vw;
+}
+.LoginPassword{
+    
+    height: 4vh;
+    border-radius: 12px;
+    padding-left: 0.5vw;
+}
+.LoginButtonContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vh;
+}
+.LoginButton{
+    border: none;
+    height: 5vh;
+    width: 15vw;
+    border-radius: 16px;
+    background-color: rgb(17, 54, 23);
+    color: white;
+}
+.LoginButton:hover{
+    border: white solid 2px;
+}

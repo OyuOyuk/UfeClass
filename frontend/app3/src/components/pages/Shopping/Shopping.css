@@ -1,0 +1,16 @@
+.products{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+.filterMenu{
+  width: 20vw;
+}
+.productContainer{
+  width: 75vw;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

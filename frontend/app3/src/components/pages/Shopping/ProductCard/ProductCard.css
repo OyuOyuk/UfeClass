@@ -1,0 +1,146 @@
+/* Color Options */
+/* .ColorOptions{
+    display: flex;
+    flex-direction: row;
+} */
+
+.options {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+}
+
+.par {
+    font-size: larger;
+    color: rgb(146, 147, 149);
+    font-weight: 500;
+}
+
+.ColorSelect {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin: 1vh;
+}
+
+/* Circles */
+.circle {
+    border-radius: 50%;
+    display: inline-block;
+    margin: 8px;
+}
+
+.circle:hover {
+    cursor: pointer;
+}
+
+/* Card */
+.card {
+    height: 80%;
+    width: auto;
+}
+
+.image {
+    background-color: ghostwhite;
+    border-radius: 8px;
+}
+
+.background {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    height: fit-content;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2vh 1vw 2vh 1vw;
+    margin: 5vw;
+    border: 1px solid grey;
+}
+
+.desc {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+#Title {
+    font-size: larger;
+    font-weight: bold;
+}
+
+#Price {
+    font-size: large;
+    font-weight: 550;
+}
+
+img {
+    width: 100%;
+}
+
+.productCardButton{
+    width: 100%;
+    
+    border-radius: 12px;
+    background-color: rgb(29, 156, 235);
+    color: white;
+    border: 0;
+    font-size: large;
+    padding: 0.5vh;
+    margin-top: 16px;
+}
+
+.productCardButton:active{
+    width: 100%;
+    
+    border-radius: 12px;
+    background-color: rgb(7, 85, 133);
+    color: rgb(152, 169, 204);
+    border: 0;
+    font-size: large;
+    padding: 0.5vh;
+    margin-top: 16px;
+}
+/* Size Select */
+.clicker {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px black;
+    border-radius: 16px;
+    width: fit-content;
+}
+
+.minus {
+    border-right: solid 1px black;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.plus {
+    border-left: solid 1px black;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.number {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.SizeSelect {
+    display: flex;
+    flex-direction: column;
+}

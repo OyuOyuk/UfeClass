@@ -1,0 +1,32 @@
+#FilterTitle {
+    letter-spacing: 4px;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 0.5vw;
+}
+
+.NameFieldInput,
+.SelectOptionsInput {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    padding: 1vw;
+    border-radius: 16px;
+}
+
+.inputMinMax {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.NumberField {
+    width: 35%;
+    padding: 1vw;
+    border-radius: 12px;
+    border: 1px solid grey;
+}
